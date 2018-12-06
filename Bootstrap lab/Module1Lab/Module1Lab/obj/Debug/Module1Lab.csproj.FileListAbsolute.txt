@@ -1,0 +1,6 @@
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\bin\Module1Lab.dll.config
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\bin\Module1Lab.dll
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\bin\Module1Lab.pdb
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\obj\Debug\Module1Lab.csprojResolveAssemblyReference.cache
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\obj\Debug\Module1Lab.dll
+C:\Users\Oluwaseun\Documents\Alc With Microsoft Front end Development Course\Bootstrap lab\Module1Lab\Module1Lab\obj\Debug\Module1Lab.pdb

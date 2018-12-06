@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="mod1LabApp">
+
+<head>
+    <title>Module1 Lab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+</head>
+
+<body ng-controller="mod1Controller">
+    <div class="container">
+        <h1>Module 1 Homework</h1>
+        <h2>The Current Date is: {{appName}}</h2>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script>
+        var mod1Lab = angular.module('mod1LabApp', []);
+        mod1Lab.constant('time', {date:new Date()});
+        mod1Lab.controller('mod1Controller', [
+            '$scope','time',
+            function ($scope,time) {
+                $scope.appName = time.date;
+            }
+        ]);
+    </script>
+</body>
+
+</html>

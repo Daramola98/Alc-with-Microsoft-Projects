@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Manager</title>
+        <meta charset="utf-8">
+        <style>
+            table {
+            margin-top: 20px;
+            }
+        table, tr, td {
+            border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <form onsubmit="return formSubmitted();">
+            <fieldset>
+                <legend>Personal informations</legend>
+                <label for="name">
+                    Name :
+                <input type="text" id="name" required>
+                </label>
+                <label for="email">
+                    Email :
+                    <input type="email" id="email" required>
+                </label>
+                <br><br>
+                <button>Add new Contact</button>
+            </fieldset>
+        </form>
+        <p>List of contacts</p><br>
+        <button type="button" id="displayContacts">Display Contacts as a Table</button><br>
+        <div id="contacts"></div><br>
+        
+        <script src="scripts/contact.js"></script>
+    </body>
+</html>

@@ -1,0 +1,76 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+    background-color: #506566;
+    }
+aside {
+    background-color: #23354B;
+    color: #CDB09E;
+    padding: 25px;
+    margin: 5px;
+    }
+section{
+    background-color: red;
+}
+.visiblelink {
+    color: white;
+}
+canvas {
+    border-style: solid;
+    border-width: thick;
+    border-color: #FCA90F;
+    background-color: #C1D6CD;
+}
+nav {
+    display:flex;
+    }
+nav > aside {
+    flex: 1;
+        }
+@media (max-width: 500px){
+    nav {
+        display: block;
+    }
+}
+@media print {
+    nav {
+        display: block;
+    }
+    body {
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    aside {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 5px;
+    }
+    }
+figure {
+    border: 1px solid #990100;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: lr;
+    width: 500px;
+}
+figure > img {
+    flex-index: 1;
+    width: 200px;
+}
+figure > figcaption::before {
+    content: "\002607\0000a0caption\A";
+    white-space: pre;
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 0.5em;
+}
+figure > figcaption {
+    flex-index: 2;
+    width: 100%;
+    padding: 10px;
+    color: #333333;
+    background-color: #E8E8E8;
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

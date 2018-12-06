@@ -1,0 +1,39 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Demos</title>
+
+</head>
+
+<body>
+    <button type="button" class="btn" id="first">First button</button>
+    <span class="animate" style="background-color:blue">I love jesus</span>
+    <br><br>
+    <button type="button" class="btn" id="Second">Second button</button>
+    <button type="button" id="trigger">trigger</button>
+    <button type="button" id="trigger-handler">triggerHandler</button>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script>
+        $(function () {
+            $('.btn').click(function () {
+                // display the id of the button
+                $('.animate').slideToggle(1000, 'swing');
+            });
+
+            $('#trigger').click(function () {
+                // Would alert every button's id
+                // including the last two
+                $('.btn').click();
+            });
+
+            // Would alert "first"
+            $('#trigger-handler').click(function () {
+                // Would alert "first"
+                $('button').triggerHandler('click');
+            });
+        })
+    </script>
+</body>
+
+</html>

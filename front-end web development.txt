@@ -1,0 +1,1680 @@
+Course 2 - HTML,CSS and JavaScript
+Semantic Html - Semantic html are html elements that describe its meaning to both the browser and the developer
+Semantic Markup - Semantic markup is text data that is annotated using a special language to offer additional meaning to the text.
+Annotation means to add notes/something to an html tag in this context to describe or explain it.
+Markup languages include markdown, LaTeX. Some tools exist for converting markup into word or pdf documents
+
+Birth of the web/html
+Tims berner lee was the founder of html he extended an already existing markup language standard generalized markup language(SGML) and also added a major feature which was the ability of html to reference other documents
+html restricts which sgml tag should be used on the web and it adds an anchor tag for referencing other documents
+
+World wide web consortium is a group of member organizations and staff who work together to develop new standards for the World Wide Web on a regular basis. The W3C has created specifications for HTML, XML, CSS and even XHTML. They also have developed other specifications including:
+
+SOAP
+SPARQL
+MathML
+
+XML(Extensible Markup Language) is another xml language that was born from the w3c, xml was created to represent data in a format which is both human readable and machine readable
+A Tag is a XML markup language construct that begins with the < character and ends with the > character.
+There are three types of tags seen in XML:
+Opening (or Start) Tag: <item> These tags represent the beginning of a logical component in XML.
+Closing (or End) Tag: </item> These tags represent the end of a logical component in XML.
+Empty Element Tag: <item /> These tags represent both a logical component without any child content.
+
+Element
+An element is a XML markup language construct that includes either an empty element tag or a set of opening & closing tags.
+
+Attribute
+A XML element can optionally have markup constructs that describe a key-value pair. These constructs are referred to as attributes and can provide additional metadata about a specific XML element.
+
+Html Elements
+There are two types of elements in html the block elements and inline elements
+Block Elements are elements take take up the entire width of the screen i.e when used it causes the browser to render them on a new line
+
+Examples of Block elements include the <body>,<div>,<br>,<article>,aside
+blockquote
+br
+button
+canvas
+caption
+dd, dl dt
+h1, h2, h3, h4, h5, h6
+footer, header
+fieldset
+form
+
+Inline Elements
+Inline elements are different from block elements because they only take up the necessary amount of space that they need to be rendered on the display
+strong
+ins
+del
+sup
+sub
+i
+em
+
+The difference between the b tag and the strong tag is the strong tag as a semantic meaning
+
+Attributes
+There are older ways to change the attributes of html elements by using the inline css styling this might also include using tags like <center>, <font>, bgcolor attribute e.t.c
+
+Hyperlinks
+External Hyperlinks : to configure hyperlinks you use the anchor tag <a></a> the anchor tag has the following attributes it has a target attribute an href attribute, a rel attribute e.t.c and can also take a download attribute which is meant for a download link
+Internal Hyperlinks : Internal hyperlink are used to navigate through html documents they are used by setting the id attribute of the html element as the href attribute for the anchor tag this can enable us to move freely through a large group of text in our html document
+
+You can also use the same internal ids# when someone navigates to your web page in their browser.
+
+For example, if your image has an id of coolImage you can give the user a URL such as http://www.mywebsites.com/index.html" and they will be navigated to your web page at the top of the home page (default behavior).
+
+If you use this url: http://www.mywebsites.com/index.html#coolImage", they will be navigated to your web page but they will start at the location of your image instead of the top of the home page.
+
+This technique is very useful for web pages with large quanitites of text where you want a user to "jump" to a specific section.
+
+Form Element
+A form is an html element which makes it possible to collect data from a user using a bunch of input tags.Examples of this input tags include:
+i- A <textarea> tag
+ii- A <select> tag this makes a drop down box to select options from you can either choose to use the <option> tag to group options or use the <optgroup> tag with a label attrribute to organise related options
+syntax is <optgroup label=""><option value=""></option></optgroup>
+iii- The input element is one of the tags also used it consists of different types
+
+-button	This renders a button that is typically used with JavaScript frameworks (such as Angular or Knockout)
+-checkbox	This renders a checkbox that can be independently clicked. The checkbox has a value of on or off
+-file	This renders a field for file selection and a Browse button to select the file on the client device
+-hidden	This does not render anything but it will store a value. This can be used to store values that need to be sent to the server when the form is saved
+-image	This renders an image that functions as a submit button (click on image to save form)
+-password	This renders a text input where the characters are masked for privacy.
+-radio	This renders a radio button that can be selected as part of a group of radio buttons.
+-text	This renders a basic text input field.
+
+fieldsets can be used to group various form inputs legend is used to describe what the groups are or have in common
+
+HTML5 Validation
+-Required : the required attributes specifies a text input must have have a value
+Type	Functionality
+color	This renders a color picker.
+date	This renders a date control that allows you to select year, month and day without time.
+datetime-local	This renders a date control that allows you to select year, month, day and time without time-zone information stored.
+email	This renders a text input field and validates that the e-mail address is valid.
+month	This renders a date control that allows you to select year and month only.
+number	This renders a text input field that only allow numeric input.
+range	This renders a control (typically a slider in most browsers) that allows a user to select an imprecise number.
+search	This renders a text input field used for search.
+tel	This renders a text input field used for telephone numbers.
+time	This renders a date control that allows you to enter time without time-zone information stored.
+url	This renders a text input field and validates that the url is valid.
+week	This renders a date control that allows you to select year and week only.
+submit	This renders a button that submits the HTML form
+
+Input elements validation attributes
+- Required
+- Readonly
+- Pattern verifies that input value matches the expected pattern for the form to be saved
+- disabled
+- Min/Max used with the range type or number input types
+- Autocomplete
+- Placeholder
+
+a form element has various attributes they include:
+- action: This is the URL of the web server or web service where you want you form data saved. 
+- method: This is the HTTP method you are using to save your form data. Only GET and POST are valid in this context.
+
+There are various semantic elements in html5 they include the following:
+-Header
+-Footer
+-Nav
+-Section
+-Article
+-Aside
+-Details
+-Figure
+-Figcaption
+-Main
+-Mark
+-Summary
+-Time
+
+Scalable Vector Graphics
+-This is an image format that can draw 2d graphics directly in the browser.SVG is based on XML and supports features such as interactivity,transistions and animations
+- HTML5 introduced the ability to embed SVG graphics directly in web pages. Now you can create SVG shapes in your HTML web page and manipulate them directly with CSS or JavaScript.
+
+Circle SVG element
+An SVG circle element creates a simple circle with a defined center point and radius:
+cx & cy	These two attributes together define the coordinates for the center of the circle. By default, the center of the circle is (0,0)
+r	This attribute specifies the radius of the circle
+fill	This attribute defines the color used for the interior of the circle
+stroke	This attribute defines the color used for the border of the circle
+stroke-width	This attribute defines the width of the border of the circle
+
+Rectangle
+A SVG rectangle element creates a single 4-sided rectangular polygon that is drawn from a defined top-left point, width and height:
+x & y	These two attributes together define the coordinates for the top-left of the rectangle. By default, the top-left of the rectangle is (0,0)
+rx & ry	These two attributes specify the radius for rounded corners on the x or y axis
+width	This attribute defines the width of the rectangle
+height	This attribute defines the height of the rectangle
+fill	This attribute defines the color used for the interior of the rectangle
+stroke	This attribute defines the color used for the border of the rectangle
+stroke-width	This attribute defines the width of the border of the rectangle
+
+Polygon
+A polygon element creates a multi sided polygon that is drawn from a defined top-left point
+it has attributes such as:
+-points: this defines the amount of points the polygon has
+-stroke: same meaning from before
+-stroke-width: same meaning from before
+-fill: same meaning from before
+
+Text element has the following attributes font-family, font-size, fill, x & y
+
+HTML Meadia
+Video Element- The video element in html is used to play video files:
+video element has attributes width, height, controls, autoplay, loop, poster
+Also contains a source element/tag which has such as src and type
+It is also good to include a custom message incase the video type is not supported by the current browser the user is using to access the page currently
+
+CSS - Cascading Style Sheets
+-The coding of cascading style sheets can be done in three places namely:
+-Inline
+-Internal Style Sheet
+-External Style Sheet
+
+CSS has two parts to a style rule.
+i. The css selectors - this is the core foundation of css since it defines the html element being manipulated with the css code
+ii. The declaration - consists of one or more property-value pairs where the property is the css eleme usually ends in a semi-colon and the declaration is enclosed in curly brackets
+
+css can be style with class, id, children and descendants e.t.c
+the important css declaration overrides any other style to the html page
+
+Margin defines the space between html elements 
+
+Padding defines the space between the content of an element and the element border
+
+Borders define the outer layer covering our html elements they have the following attributes width, color and style
+
+CSS Media Queries
+CSS Media Queries allow us to conditionally apply CSS in specific scenarios based on properties of our current browser.
+you can use media queries as an attribute with the link element in the head element
+
+Fonts
+@fontface can be used to define your own custom headers the attributes include font-family and source(src)
+
+Types of font formats include:
+OpenType Font (OTF)	Most browsers
+TrueType Font (TTF)	Most browsers
+Web Open Font Format (WOFF)	Most browsers
+Web Open Font Format 2.0 (WOFF 2.0)	Not supported in IE
+Embedded OpenType Fonts (EOT)	Supported only in IE
+SVG Fonts (SVG)	Supported only in Chrome and Opera
+
+JavaScript
+JavaScript is a programming language or an object-based programming written into an HTML page to make it more interactive.
+
+JavaScript can be used to:
+
+Add multimedia elements such as showing, hiding, changing, creating image role overs, scrolling text across the status bar, etc.
+
+JavaScript makes it possible to create tailored dynamic page contents, date and time, or other external data.
+
+Form processing such as user input validation during the form submission, modify the contents of the form.
+Associative arrays, unlike regular arrays are indexed via strings contrary to numbers.
+A programming language qualifies to be called object-oriented if it has the following four basic capabilities:
+Encapsulation: store related information, data or methods,together in an object.
+Aggregation: store one object in another object.
+Inheritance: the ability of a class to depend upon another class (or number of classes) for some of its properties and methods.
+Polymorphism: to write one function or ways that serves in a variety of different ways.
+
+Here's the most common HTML element events that you may use in your web pages.
+
+Event	Details
+onload	The browser has finished loading the page
+onmouseover	The user moves the mouse over an HTML element
+onmouseout	The user moves the mouse away from an HTML element
+onclick	The user clicks an HTML element
+onkeydown	The user pushes a keyboard key
+
+Exception Handling
+The finally statement is useful if you would like to ensure that a block of code is executed, if possible, after your exception is handled safely. If you are opening connections to external services, this can be a good place to ensure that the connection is closed. The finally statement is ran regardless of the result.
+
+XMLHttpRequest
+Modern browsers have an object that is built-in to JavaScript to handle the act of requesting data from a server. This object is referenced using the XMLHttpRequest identifier. Most browsers have a built-in facility to handle accessing, parsing and manipulating XML.
+Status Values for readyState
+0. request not initialized
+1. server connection established
+2. request received
+3. processing request
+4. request finished and response is ready
+
+HTML 5 APIS
+LocalStorage
+HTML5 introduced local storage. Local storage allows web applications to store data directly in the user's browser. Since the data is not sent "across the wire", it is more secure and you can feasibly store very large quantities of data without having to worry about sending them in every HTTP request. Store can also hold much more data (upwards of 5MB) since it does not have to transfer that data.
+
+Local storage is isolated per website domain (www.test.com, www.example.com) and protocol (http, ftp, etc.). This means that every web page in your website that uses the same protocol and the same domain can access the same local storage data.
+
+Geolocation
+HTML5 includes a Geolocation API that allows you to query the position of a user either at a point in time or over a period of time (tracking). A user location is considered private information so the user will be prompted to approve of your request when you first use the API.
+function getPositionResult(position) {
+    console.log(position.coords.latitude + ' ' position.coords.longitude);
+}
+navigator.geolocation.getCurrentPosition(getPositionResult);
+
+WatchPosition
+function refreshPosition(position) {
+    var list = document.getElementById('positionList');
+    list.innerHtml += ('<li>' + position.coords.latitude + ' ' position.coords.longitude + '</li>');
+}
+navigator.geolocation.watchPosition(refreshPosition);
+
+Canvas
+This can be used to draw on the html document, it makes use of a canvas element and draws using coordinates.
+methods on the canvas api include filltext, stroke, beginPath, moveTo,arc,lineTo
+
+Web Workers
+A web worker is a JavaScript file with logic written to run in the background, without affecting the performance of the page or making the page unresponsive.
+methods include terminate
+
+Unicode is a universal character set, ie. a standard that defines, in one place, all the characters needed for writing languages in use on computers. It is a superset of all other character sets that have been encoded.
+
+when a number starts with 0 the javascript engine treats it as an octal number that is a number to base 8
+Infinity, -infinity and NaN are special kinds of number types 
+
+Table Api
+this is a javascript dom api used for building tables
+
+let tableBody = document.querySelector('tableId'(or any valid css selector))
+newRow = tableBody.insertRow() // creating a new row in the table body
+firstCell = newRow.insertCell() // inserting a cell to the new row
+firstCell.innerHTML = ""/variable // this assigns a value or html element to the cell
+
+Canvas Implementation of event handlers
+var canvas, ctx, mousePos, mouseButton;
+
+window.onload = function init() {
+    canvas = document.getElementById('myCanvas');
+    ctx = canvas.getContext('2d');
+
+    canvas.addEventListener('mousemove', function (evt) {
+        mousePos = getMousePos(canvas, evt);
+        var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        writeMessage(canvas, message);
+    }, false);
+
+    canvas.addEventListener('mousedown', function (evt) {
+        mouseButton = evt.button;
+        var message = "Mouse down button " + evt.button + " down at position: " + mousePos.x + ',' + mousePos.y;
+        writeMessage(canvas, message);
+    }, false);
+
+    canvas.addEventListener('mouseup', function (evt) {
+        var message = "Mouse up at position: " + mousePos.x + ',' + mousePos.y;
+        writeMessage(canvas, message);
+    }, false);
+};
+
+
+
+function writeMessage(canvas, message) {
+    ctx.save();
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.font = '18pt Calibri';
+    ctx.fillStyle = 'black';
+    ctx.fillText(message, 10, 25);
+    ctx.restore();
+}
+
+function getMousePos(canvas, evt) {
+    // necessary to take into account CSS boudaries
+    var rect = canvas.getBoundingClientRect();
+    return {
+        x: evt.clientX - rect.left,
+        y: evt.clientY - rect.top
+    };
+}
+
+Starting a stream using the Webcam
+
+Special cases in Equality Operations
+NaN == NaN // false
+NaN === NaN // false
+use isNaN(expr) to check if a value is not a number
+
+switch(expr){
+case :
+break
+
+}
+
+loop statements
+While loop
+Do while loop
+For loop
+
+A loop is used to run the same block of code several times until a condition is satisfied
+
+for i is used to iterate over objects in which an array is also an object
+for of is used on arraylike data types i.e datatypes that have similar structure with the array
+the continue statement is used to continue an iteration unlike the break which breaks out of the loop continue moves on to the next iteration
+
+Event Handlers
+The event object contains some important properties and methods that are common to all types of events:
+
+evt.type: the name of the event
+evt.target: for example, is the HTML element that has fired the event. In our previous examples with the click listeners on a button, evt.target in the event listener is the button itself.
+evt.stopPropagation(): will not propagate the event to all other elements that listen to it. If several elements are registered for a click event - for example, you have a click listener on a button and on the window (the whole page). If you click on the button, and if in its click event listener you call evt.stopPropagation(); then the click event listener on the window object will never be called.
+evt.preventDefault(): the default browser behavior will not be executed. For example, in a 'contextmenu' event listener attached to an object, if you call evt.preventDefault(), instead of having the right click default context menu of your browser displayed, you'll be able to display your own context menu, like in this example.
+It also contains properties that are associated with the type of the event, for example:
+
+evt.button: the mouse button that has been used in the case of a mouse event listener
+evt.keyCode: the code of the key that has been used
+evt.pageX: coordinate of the mouse relative to the page
+etc.
+
+page events in javascript - load, resize, scroll
+the resize event uses properties such as window.innerwidth and window.innerheight and screen.width and screen.height
+the scroll event uses properties such as scrollheight and pageyoffset example code that shows the usage of the scroll event
+window.addEventListener("scroll", function() {
+      var max = document.body.scrollHeight - window.innerHeight;
+      var percent = (window.pageYOffset / max) * 100;
+      progressBar.style.width = percent + "%";
+  });
+
+key events in javascript
+keydown: the event occurs when the user is pressing a key.
+keyup: the event occurs when the user releases a key.
+keypress(now deprecated): the event occurs when the user presses a key(up and release).
+
+keyboard event properties that can be accessed by the event property include key, keycode, shiftkey-this indicates whether the shift key was pressed when the keyevent was triggered, ctrlkey, altkey
+
+Dealing with different keyboard layouts
+evt.key and evt.code are new w3c specifations for getting the key value
+
+Mouse Events
+mouse events include mouseup, mousedown,click,dblclick,mouseenter,mousemove,mouseleave,mouseover,contextmenu
+mouse event properties include: button, clientX and clientY, pageX and page Y, screen X and screen Y, alt,shift,ctrl key, detail- how many times the mouse was clicked
+Client X and Y - Returns the coordinates of the mouse pointer, relative to the element coordinate system that triggered the event. If you click in the left top corner the value will always be (0,0) independent of scroll position, these coordinates are relative to the VIEWPORT (the visible part of the document page)
+Page X and Y - Returns the coordinates of the mouse pointer, relative to the document, when the mouse event was triggered. They are relative to the complete document/page, and will always be relative to the very beginning of the document/page, even if the top of the page is not visible because you've scrolled down. They will change when the page scrolls and the mouse does not move! 
+Screen X and Y - Returns the coordinates of the mouse relative to the screen when an event was triggered
+ Example of a draggable mouse event in javascript
+window.onmousemove = moveElem;
+window.onmouseup = stopMovingElem;
+window.onload = init;
+
+var selected = null; // element to be moved
+var oldMouseX, oldMouseY; // Stores x & y coordinates of the mouse pointer
+var elemX, elemY;
+
+function init() {
+    document.querySelector('.draggable').onmousedown = function (evt) {
+        dragInit(evt);
+    };
+}
+  
+// Will be called when user starts dragging an element
+function dragInit(evt) {
+    // Store the elem
+    selected = evt.target;
+    elemX = selected.offsetLeft;
+    elemY = selected.offsetTop;
+  
+    oldMouseX = evt.clientX;
+    oldMouseY = evt.clientY;
+}
+
+// Will be called when user dragging an element
+function moveElem(e) {
+    // new mouse ps
+    var newMouseX = e.clientX;
+    var newMouseY = e.clientY;
+  
+    if(oldMouseX !== undefined) {
+        // how many pixels did we move the mouse?
+        var dx = newMouseX - oldMouseX;
+        var dy = newMouseY - oldMouseY;
+     }
+    
+    if (selected !== null) {  
+        // move the selected element dx, dy pixels hozontally/vertically
+        changePosOfSelectedElement(dx, dy);
+    }
+  
+    // update the old position of the mouse
+    oldMouseX = newMouseX;
+    oldMouseY = newMouseY;
+}
+
+function changePosOfSelectedElement(dx, dy) {
+  // update the old position of the selected element
+  elemX += dx;
+  elemY += dy;
+  
+  // change the pos on screen of the element
+  // by modifying its CSS left/top properties
+  selected.style.left = elemX + 'px';
+  selected.style.top = elemY + 'px';
+}
+
+// Destroy the object when we are done
+function stopMovingElem() {
+    selected = null;
+}
+
+Form events
+form related events include input, change, focus, blur, select, submit
+
+form event properties include
+
+The DOM API
+The DOM is a standard  that describes how a document must be manipulated. It defines a “language- and platform neutral interface”. So, every browser offers the same JavaScript DOM API.
+there are two types of elements in the dom they are the element node and text nodes
+
+We can access html elements with the
+1. the selector api
+2. the dom api
+
+when styling with javascript remove the - and replace with a capital letter i.e text-align = textAlign
+The classList interface simplifies it all by acting as a container object and by providing a set of methods to manipulate its content
+The classList property applies to an html element, and returns a collection of class names
+the list of methods usable on the class list api include add() remove() toggle() and contains()
+the contains methods is used to check if the element contains a particular class
+the toggle method is used to toggle between the add and remove methods i.e it removes a class if it exists on an element and adds the class if it does not exist
+element.toggle('classname')
+
+Changing the content of selected element: this can be done using the 
+1. innerHTML property
+2. textContent property
+
+You can add new elements to the dom in javascript by using the following properties append, appendChild, insertBefore or the innnerhtml property,
+
+you can use the append and append child to move elements from one location to another in the dom it can only be used on an already existing element
+Example can be found below
+function move(elem) {
+  var targetList = document.querySelector('#coolBrowsers');
+  targetList.append(elem);
+  
+  // trick to remove the click listener once
+  // the image has been moved into the list
+  elem.onclick = null;
+}
+
+ 
+Concise Example using the canvas save and restore methods
+// useful to have them as global variables
+var canvas, ctx, w, h; 
+
+window.onload = function init() {
+    // called AFTER the page has been loaded
+    canvas = document.querySelector("#myCanvas");
+  
+    // often useful
+    w = canvas.width; 
+    h = canvas.height;  
+  
+    // important, we will draw with this object
+    ctx = canvas.getContext('2d');
+  
+    // ready to go !
+    drawFilledRectangle(10, 10, 20, 20, "red");
+  
+    drawFilledCircle(100, 100, 15, "green");
+};
+
+function drawFilledRectangle(x, y, width, height, color) {
+    // GOOD practice: save the context, use 2D trasnformations
+    ctx.save();
+  
+    // translate the coordinate system, draw relative to it
+    ctx.translate(x, y);
+  
+    ctx.fillStyle = color;
+    // (0, 0) is the top left corner of the monster.
+    ctx.fillRect(0, 0, width, height);
+  
+    // GOOD practice: restore the context
+    ctx.restore();
+}
+
+function drawFilledCircle(x, y, radius, color) {
+    // GOOD practice: save the context, use 2D trasnformations
+    ctx.save();
+  
+    // translate the coordinate system, draw relative to it
+    ctx.translate(x, y);
+  
+    ctx.fillStyle = color;
+    // (0, 0) is the top left corner of the monster.
+    ctx.beginPath();
+    ctx.arc(0, 0, radius, 0, 2*Math.PI);
+    ctx.fill();
+ 
+    // GOOD practice: restore the context
+    ctx.restore();
+}
+
+ctx.translate(x,y) draws any item relative to that position that is every item has a default starting point of the translate variables
+
+Making Animations can be done using 
+1. Set Interval 
+2. Set Timeout
+3. requestAnimationFrame
+
+Steps to be taken in creating an animation
+1. clear the canvas
+2. draw the item
+3. move the item
+
+canvas mouse event listeners
+mouseleave: similar to mouseout, fired when the mouse leaves the surface of the element. The difference between mouseleave and mouseout is that mouseleave does not fire when the cursor moves over descendant elements, and mouseout is fired when the element the cursor moves to is outside the bounds of the original element or is a child of the original element.
+
+Arrays
+it contains methods such as array.push(), array.pop, array.sort(fn)
+
+Strings
+JavaScript strings are read only when using the bracket notation
+has methods such as substring, substr e.t.c
+
+the for each operator can take 3 parameters namely the variable holding the current element, the index of the element, and the arr we are iterating
+
+Video Element JavaScript Api
+This API contains a lot of methods such as play(), pause(), e.t.c
+
+
+WebCam API
+Example using callbacks
+window.onload = init;
+function init() {
+   navigator.getUserMedia ({video: true, audio: false}, success, error);
+}
+
+// successCallback
+function success(localMediaStream) {
+  var video = document.querySelector('video');
+  video.src = window.URL.createObjectURL(localMediaStream);
+  // Do something with the video here, e.g. video.play()
+}
+
+// errorCallback
+function error(err) {
+  console.log("The following error occured: " + err);
+}
+
+Example using Promises
+window.onload = init;
+
+function init() {
+   navigator.mediaDevices.getUserMedia({audio: true,video: true})
+     .then(function (stream) {
+           var video = document.querySelector('#video');
+           video.src = URL.createObjectURL(stream);
+           video.play();
+      })
+     .catch(function(err) {
+        alert("something went wrong: " + err)
+   });
+}
+
+event.target helps us to know the element that fired the event
+
+Geolocation Api
+typical geolocation API use
+navigator.geolocation.getCurrentPosition(showPosition, onError);
+ 
+function showPosition(position) {
+    console.log("latitude is: " + position.coords.latitude);
+    console.log("longitude is: " + position.coords.longitude);
+}
+ 
+function onError(err) {
+    console.log("Could not get the position");
+}
+
+
+Objects 
+delete obj property is used to delete the property of the given object
+when using translate the x and y parameters are set as 0 in the fillRect or strokeRect
+
+Classes 
+These are models or templates made for objects with related properties
+Classes are defined with the capital letters same as constructors
+With classes properties are defined in the constructor function
+while the methods are defined outside the constructor functions
+
+Class declarations are not hoisted whereas function declarations are hoisted
+There are three different ways of creating objects this include
+Object literals
+Function factories
+ES6 classes
+
+A function factory is a function that is used to create objects i.e the functions return value is an object.
+Static methods or static properties can only be accessed using the name of the class itself without instantiating the class
+The static keyword defines a static method for a class. 
+
+Static methods are called without instantiating their class 
+and can not be called through a class instance. 
+
+Consequence: do not use instance properties in their body!
+
+Static methods are often used to create utility functions for an application (source: MDN).
+
+Using setters and getters
+class Person {
+    constructor(givenName, familyName) {
+        this.givenName = givenName; // "normal name"
+        this._familyName = familyName; // starts with "_"
+    }
+    get familyName() {
+        return this._familyName.toUpperCase();
+    }
+    set familyName(newName) {
+        // validation could be checked here such as
+        // only allowing non numerical values
+        this._familyName = newName;
+    }
+    walk() {
+        return (this.givenName + ' ' + this._familyName + ' is walking.');
+    }
+}
+let p1 = new Person('Michel', 'Buffa');
+console.log(p1.familyName); // will display BUFFA in the devtool console
+                            // this will call implicitly get familyName();
+p1.familyName = 'Smith';    // this will call implicitly set familyName('Smith');
+
+Objects are passed by reference while primitives are passed by value
+var defines variables on a global level scale i.e it is attached as a property/method of the global/window object
+let on the other hand does not define variables on a global scale i.e it doesnt attach them as properties/methods of the global/window object
+
+Array
+the slice method doesnt affect the original array but the splice method has an effect on the original array
+the array object also includes methods such as sort, join, push, pop, shift, lenght, unshift
+
+Number
+The number method contains useful methods such as the parseInt() or parseFloat this can be used in converting a string to a number
+the number method also includes methods such as the toFixed(used on decimal numbers) toExponential toString
+
+String
+strings in javascript are non modifiable that is they are immutable
+Strings have methods such as indexof lastindexof charAt charCodeAt the original string object also has a method called String.charcode()
+the substring method takes 2 parameters the starting index and the ending index but doesnt include the ending index
+the substr method can take a negative starting index i.e starting from the last element and the second parameter is the delete count starting from the start index
+String methds are chainable
+Distinctions of substring():
+If start > stop, then substring will swap those two arguments.
+If either argument is negative or is NaN, it is treated as if it were 0.
+
+Distinctions of slice():
+If start > stop, slice() will NOT swap the two arguments.
+If start is negative: sets char from the end of string.
+If stop is negative: sets stop to: string.length – Math.abs(stop.
+
+Math
+An utility function to get a random value between two numbers
+function getRandomValue(min, max) {
+    return ((max - min) * Math.random()) + min;
+}
+The Math object includes a lot of mathematical methods this include Math.PI, Math.random e.t.c
+
+Date
+ var dayOfTheWeek = [0,0,0,0,0,0,0];
+ 
+for (var year = 2017; year <= 2047; year++) {
+    dayOfTheWeek[new Date(year, 4, 16).getDay()]++;
+}
+ 
+> dayOfTheWeek
+[4, 4, 5, 5, 5, 4, 4] // 4 times on a Sunday, Monday, Friday and Saturday, 
+                      // 5 times on Tuesday, Wednesday and Thursday
+
+Tables
+Best practice for making the table accessible: always add a <caption> tag inside the <table> tag. Data tables very often have brief descriptive text before or after the table that indicates the content of that table. This text should be associated to its respective table using the <caption> element. The <caption> element must be the first thing after the opening <table> tag.
+
+Second best practice for accessibility: use a scope attribute with all <th scope = "row or column"> for identifying whether a table header is a column header or a row header. 
+table properties include rows, caption, tfoot, thead
+table javascript api is used as follows
+table.insertRow() - this is used to insert a row into the table the row would be inserted at the end if no parameter is specified but if a parameter is specified it is inserted at the index in the parameter
+after creating the row we can use the innerhtml property to add table data to the row or we can use the 
+'variablename'.insertCell()
+other useful properties include deleteRow(), createCaption(), deleteCaption, createThead(), deleteThead, createTfoot, deleteTfoot
+
+the tableRow object has properties which include cells, rowIndex and sectionRowIndex
+the tableRow object also has methods we can use to create data in the cells instead of using the standard innerhtml property this methods include
+-insertCell()
+-deleteCell()
+
+Forms
+
+The <meter id="passwordStrength" min="0" max="10" value="0" low="5"></meter> is an html5 semantic tag that is used to measure the length of passwords
+<input name="quest" id="quest" type="search" placeholder="I seek..." autocomplete="off" />
+<datalist id="swallows">
+  <option value="African or European?"></option>
+</datalist>
+
+Form Validation javascript api
+HTML
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Example of using the validation API</title>
+     <meta charset="utf-8">
+  </head>
+  <body>
+<form class="myForm" onsubmit="return submitForm();">
+  <fieldset>
+    <legend>Example use of the validation API: try to submit with different passwords, and with same passwords</legend>
+ <label for="password1" >Password:</label> <input type="password" id="password1" oninput="checkPasswords()" required>
+ <p>
+ <label for="password2">Repeat password:</label> <input type="password" id="password2" oninput="checkPasswords()" required>
+ <p>
+   <button>Submit</button>
+  </fieldset>
+</form>
+</body>
+</html>
+
+JS
+function checkPasswords() {
+    var password1 = document.querySelector('#password1');
+    var password2 = document.querySelector('#password2');
+   
+    // Use HTML5 form validation API
+    if (password1.value !== password2.value) {
+       // password2 input field is invalid
+       password2.setCustomValidity('Passwords are different');
+    } else {
+      // call to setCustomValidity with an empty arguments
+      // indicates that the input field is valid
+       password2.setCustomValidity('');
+    }
+}
+
+function submitForm() {
+  document.body.append("We can submit, the form is valid!");
+  
+  // Here, for example, we can do what we want with the data
+  // Send to a server using Ajax,
+  // show the data in a table,
+  // save data client-side, etc.
+  
+  // returning false will not submit the form
+  return false;
+
+JSON
+JSON stands for JavaScript Object Notation
+json.stringify to convert javascript object to a json string / object
+
+WEB STORAGE
+With localStorage the data will remain until it is deleted, whereas with sessionStorage the data is erased when the tab/browser is closed.
+localStorage is a simple key-value store, in which the keys and values are strings. There is only one store per domain. This functionality is exposed through the globally available localStorage object. The same applies to sessionStorage.
+Cookies are also a popular way to store key-value pairs. Web Storage, however, is a more powerful technique than cookies. The main difference is in size limits: cookies are limited to a few KBytes whereas Web Storage may extend to several MBytes. Also, cookies generate additional HTTP request traffic (whether to request a Web page, an image, a stylesheet, a JavaScript file, etc.).
+
+CSS BASICS
+Three ways to define colors = keyword, hex code and rgb value
+when using fonts with multiple words surround them in curly braces
+we set font-size with the em value which means relative to the screen being used 1em is the default size
+text decoration : underline, overline, line through
+
+Properties that can make a title standout : size 
+font
+capitalization
+color
+emphasis
+weight
+
+border-radius for rounded borders
+
+Classes are an HTML attribute that specifies a name for a group of elements on the page. You can apply the class name to as many elements as you like, even if they are of different HTML tag types.
+An ID is an HTML attribute that specifies a name or unique identifier for a particular HTML element. They are like classes with a very important distinction: the value of the ID attribute must be unique throughout the document. This lets you target a single HTML element for styling. You use the name with a hashtag in front as the selector
+
+Pseudo-Classes
+Pseudo-classes are a way to select HTML elements based on their state as opposed to their HTML structure
+Pseudo-classes must always be applied to an existing selector. Their "flag character" is the colon (":")
+These two states are mutually exclusive, meaning a link cannot be both at the same time.(talking about link and visited
+
+Examples of pseudocode classes include
+:visited
+:hover
+:link
+:focus
+:active
+s
+Contextual Selectors
+When you use two selectors separated by a space on a rule, you scope the rule to the elements that correspond to the selector on the right that are INSIDE the elements that correspond to the selector on the left.
+
+Cascading part of CSS
+CSS has a way to figure out which rule "wins" when styles are conflicting. CSS actually computes a "weight" for each style rule and the one with the greatest weight wins. If you want all the specifics on how this weight is computed you can read more here. For simplicity's sake, the most specific rule wins! 
+If two rules have the exact same weight, the one that comes later in the CSS document is what is applied.
+You can use the "!important" modifier on a CSS property so that it will guarantee that style will be applied. This is a way for you to override the calculated weight.
+
+The Box Model
+This consists of the element the padding the border and the margin
+float property can be used to position elements
+
+Positioning
+The "position" property sets the algorithm for how the Web browser will compute the way the HTML elements are placed on the page. There are four different value options for the position property: 
+
+relative - This is the position setting we will be discussing in detail as it is the best way to build on the dynamic layout methods we have learned thus far. This lets you specify where an HTML element should be relative to where it would be by default.
+static - This is the default setting and will place an element wherever the web browser computes it should be. 
+fixed - This places an element in a specific location within the window. You can use this to set an element to remain where it is regardless of scrolling. This was used heavily when "frames" were popular, however now it should be used very sparingly. 
+absolute - This allows you to position elements relative to their containing box. This removes an element from its normal flow (just like a floating element) so it can be difficult to control and make a layout that is truly dynamic. 
+
+CSS Design Rules
+Typography - A good rule of thumb when designing your Web site is to use no more than two different typefaces per page. Typically this means that you select 1 bold typeface for titles or other eye-catching pieces of text, and a neutral typeface for large blocks or the body text of your page. 
+
+sans-serif - These are the most popular fonts for Web pages. This means the letters do not have added flourishes, so the typefaces are simpler. Their simplicity makes them easier to display on computer screens as their resolution is much lower than a printed document. It is often suggested you choose a sans-serif font for large blocks of digital text.
+Examples: Helvetica, Verdana, Arial, Tahoma
+serif - These fonts are the second most popular typefaces. "Serif" refers to the small flourish lines at the edges of letters and symbols. "Serifs" make each character more distinct, making text easier to read in print. This is why these fonts might remind you of a text from a typewriter, or of the fonts you see in printed books, newspapers or magazines. These typefaces can often be used effectively for titles or emphasis.
+Examples: Times New Roman, Book Antiqua, Georgia
+monospace - These fonts guarantee that all letters have the same fixed width. This is similar to a manual typewriter, or how computer code appears in editors. These fonts were designed for the ease of the technology, not humans, so they should be used sparingly. The most effective time to use these is when showing snippets of code. 
+Example: Courier New 
+cursive - These fonts mimic human handwriting often by joining letters or having an italic slant. For some languages, these fonts are extra effective such as Arabic. Other than for specific languages, these fonts in English can be rather complex so they are best use extremely sparingly. 
+Example: Comic Sans MS
+fantasy - This is the most diverse category of fonts and includes all of those that are particularly decorative. These can make really great top headers as they can give your Web page a very distinct visual identity. Rarely will you want to use these for anything other than titles. It is also good to note that few of these are widely supported, so to use these you'll probably want to download them from a font service to make them available for your user.
+Example: Impact
+
+Color - Dont use too much colors on a web page
+
+Web Accessibility
+Web accessibility focuses on ensuring equivalent access for people with disabilities. It is increasingly important to many organizations and governments from around the world, and has many business benefits.
+Inclusive Design 
+Internalization- Language: Always declare the default language of your page using the lang attribute on the html tag, and indicate internal language changes.
+Localizable styling: Use CSS styling for the presentational aspects of your page. So that it's easy to adapt content to suit the typographic needs of the audience, keep a clear separation between styling and semantic content, and don't use 'presentational' markup.
+Use international features: Use the international features provided by CSS to make your pages look natural to your audience. The more you use such features, and the more you request them, the better browsers will support them.
+Check your colors and styles: Be sensitive to local preferences of your audience for things such as color, but also use of white space, two-dimensional vs. uni-directional display of information, etc.
+Use start and end: Using these values, where possible, rather than left and right makes it easier to convert content between languages that use right-to-left and lef-to-right scripts.
+
+Things to avoid when styling elements
+marquee and rotating text - instead, use the different aspects of font to emphasize text like: size, color, weight or typography.
+cursors with animation - a very exciting feature at the time, now would be considered very dated, especially since mobile Web browsers don't even show a cursor. If you are going to adjust the cursor's appearance, do so using the CSS cursor property and limit your usage to help your users understand when an item is interactive.
+lots of GIFs - GIFs are still very in style, especially with the popularity of services like giphy.com. Be aware however that GIFs draw a LOT of attention, so try to only use them when necessary. 
+videos that play automatically - these days, you'll find this tactic used almost exclusively by advertisements, so it is a good idea to avoid it if you don't want your user to dismiss your content. 
+background music - sometimes still used to set a tone for your site, but often is considered disruptive by users. If you absolutely must have background music, make sure to give your user a way to turn it off that is easily accessible.
+
+Current Web Design Trends
+Minimalism
+This Web design trend is part fashion, part function. Since we always keep mobile devices in mind when designing, the "rich design" styles of the past (drop shadows, gradients, lots of images, colors, and fonts) have been replaced with the current trend "flat design".
+
+Flat design emphasizes:
+
+simple elements - grid layouts, limited number of elements
+clean typography - sans-serif fonts, large sized and lower case 
+flat colors - no drop shadows, no attempt to make 2D elements look 3D
+Benefits of flat design:
+
+low load times - better for mobile network connections
+responsiveness - when there are a small number of elements, it is easier to manage their relationships so that the overall layout can grow and shrink to accommodate different screen sizes
+intuitive experience - research has shown that the cleaner a site, the easier it is for a user to find the information they are looking for
+
+Long Scrolling
+New Layout Techniques
+CSS Flexbox
+Since its introduction in 2012, CSS Flexbox has become widely used and browser support is really good. Flexbox made a lot of complex layout tasks easier, like equi-distant spacing between elements, top-to-bottom layouts or the holy grail. 
+
+CSS Grid
+CSS Grid is a CSS module that defines a two-dimensional grid-based layout system, optimized for user interface design. In the grid layout model, the children of an element (the ‘grid container’) can be positioned into arbitrary slots in a predefined flexible or fixed-size layout grid.
+
+Advance CSS
+Responsive Layout using media queries
+Responsive website is a way of creating views that would work on various screen sizes.
+Media Queries allow us to make layouts based on arguments such as the screen size e.t.c
+Responsive web design resizes everything visible on your web page so that it’s viewable on any electronic device, no matter the size; whether you’re using a laptop, 
+tablet, or phone. 
+
+Media queries look at the capability of the device, and you use them to check the:
+Width and height of the viewport
+Width and height of the device
+Page orientation
+Resolution
+
+Use the @media rule for media queries, which define the different style rules for various media types and devices. CSS3 supports media queries such as screen, 
+print and handheld, max-width, device-width, orientation, and color. 
+
+Using Style Guides to Set Up Your Base CSS
+Style guides are often provided by a graphic designer and are not always the perfect technical document, but they are a huge help in quickly identifying the design 
+patterns that the designer has envisioned. These sorts of files and documents will help you create your base CSS file and later on more complex web modules.
+
+Base rule styles include setting heading sizes, default link styles, default font styles, and body backgrounds. A base rule style defines the default styling for a 
+specific element in all occurrences of that element on your web page. You apply base rule style to an element using an element selector, a descendent selector, or a 
+child selector, with any pseudo-classes. The base rule style doesn’t usually include any class or ID selectors.
+
+You may also include a CSS Reset in your base, which defines a consistent foundation across browsers upon which to build your website. 
+Use a CSS Reset to apply a set of base styles that reset your web page’s default margin, padding, and other properties.
+
+The advantages of implementing a front-end style guide for your web page are: 
+Code standardization of CSS, and HTML
+Consistency of code and design 
+More efficient workflow
+Documenting of code practices
+An easy-to-access reference for code and design for new team members
+
+Your style guide will be comprised of:
+A template: The template contains the basic elements that serve as the foundation for your web page, such as color palette, fonts, headers, footers, body text, 
+navigation, widgets, and grid layouts.
+Patterns: The patterns for your web page include buttons, logos, images, the font icon library, and form styles.
+Documentation: The documentation is a record of the style and development pattern of your web page. You can add comments in your code that serve as the style guide 
+or use interactive modals or tool tips.
+
+Media Queries
+Media queries are simple filters that you can apply to CSS styles, which enables you to create a responsive experience. 
+A key concept behind responsive design is fluidity and proportionality, as opposed to fixed-width layouts.
+
+A media query consists of a media type and zero or more expressions that limit the style sheet's scope by applying media features, such as width, height, and color.
+
+The most commonly used media queries are:
+min-width Rules applied for any browser width over the value defined in the query
+max-width Rules applied for any browser width below the value defined in the query
+min-height Rules applied for any browser height over the value defined in the query
+max-height Rules applied for any browser height below the value defined in the query
+orientation:portrait Rules applied for any browser where the height is greater than or equal to the width
+orientation:landscape Rules for any browser where the width is greater than the height
+
+There is an important difference between min-width and min-device-width. The value for min-width is based on the size of the browser window, 
+while the value for  min-device-width is based on the size of the display screen for the device.
+
+Device Breakpoints
+Breakpoints are the design element cutoff points you specify in your website design that provide the most effective visual layout for your site’s content. 
+Breakpoints can be divided into two different types; major and minor. Major breakpoints are usually based on the most classic device sizes being used by people, 
+and minor are breakpoints are used to fix content issues between the major breakpoints. It’s imperative that you create web applications that are focused on readable 
+content at any width. You should always incorporate a fluid layout structure by using percentage widths to account for all widths between major breakpoints.
+
+Example of a set of major device breakpoints:
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {...}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {...}
+
+/* tablets/desktops and up  */
+@media (min-width: 992px) and (max-width: 1199px) {...}
+
+/* large like desktops and up */
+@media screen and (min-width: 1200px) {...}
+
+Keep these breakpoint guidelines in mind when designing your website’s layout:
+
+Optimize the text for reading
+Use major device breakpoints, and address content with minor breakpoints
+Treat your website’s layout as an enhancement
+Use relative units like rem or em;
+
+Grid works well with the layout of items in two dimensions, such as rows and columns. Flexbox lays out items in a single dimension, either in a row or a column. 
+For both Grid and Flexbox, the property values are similar. Both layouts require a parent container that manipulates the position of the child elements. 
+Like every CSS property, or HTML element, there are defined ways to accomplish a task, but certain syntax and semantics are better suited for specific situations.
+
+Grid Layout Module
+The Grid layout module is best suited for organizing the layout structure of higher-level elements such as headers, sections, asides, and footers, 
+while implementing a true grid with gutters.
+
+Flexbox Layout Module
+Flexbox allows your web page content to control the way it is displayed, on a row-by-row or column-by-column basis. 
+Flexbox is best suited for targeting the position of child elements and their spatial relationship within a parent element. 
+It provides a fluid solution for aligning and spacing elements. In the Flexbox layout model, the children of a Flexbox container can be laid out in any direction, 
+and can flex their sizes, either growing to fill unused space or shrinking to avoid overflowing the parent. You can easily manipulate both horizontal and vertical 
+alignment of the children elements. You can build layouts in two dimensions by nesting the page elements (horizontal inside vertical or vertical inside horizontal). 
+Essentially, if you have many items and don’t need them to line up with any other elements on the page, but just want them displayed evenly and flexibly, you want to 
+use Flexbox.
+
+In summary, use the Grid layout for the main page structure of rows and columns, and use Flexbox for navigation, UI elements, 
+and any other web page items that work better with a linear layout. Grid is appropriate for overall page layout, and for complicated page components that aren’t 
+linear in their design. Flexbox is appropriate for many layouts, and many page component elements, since most of them are fundamentally linear.
+
+Images
+Before you add images to your web page, first prepare the images for the Web using an image editing program. That preparation consists of these three steps:
+
+Resampling the image so that it is at the proper resolution for the Web.
+Resizing or cropping the image so that it is the right size on your web page.
+Saving the image in one of the three Web image graphics formats: JPEG, PNG, or GIF.
+Tip: For images, JPEG is the best overall option, but the GIF standard allows animated images.
+
+Every image is comprised of pixels. The more pixels per inch the image has, the sharper and more detailed it will appear. Most images on the Web are 72 and 100 pixels 
+per inch.
+
+To make an image responsive to the container it is in, you will set the width to 100%. The following is a basic CSS example to make your images responsive:
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+Making Your CSS Modular
+The term “Module” is often used in development to describe an encapsulated building block that makes up part of a larger program. 
+In the context of CSS, Modular CSS describes a consistent approach for creating CSS that is broken down into smaller parts. 
+You will also come across articles that describe similar approaches where what we are referring to as Modules are also sometimes called Components, Objects, or 
+Web Parts. CSS modules are crafted based on a set of guidelines to create a collection of re-usable building blocks. The core concept present throughout the various 
+guidelines is how to identify the smaller parts that make up a page and then how to construct them using a consistent naming pattern.  
+
+Modular CSS is:
+A guideline based approach for breaking down pages into generic reusable CSS code.
+Based on classes and consistent naming conventions.
+Easy to read and maintain by teams.
+CSS Modules are:
+Generic, self-contained, and reusable.
+Modifiable, combinable, and scalable.
+Can contain or be contained by other modules but stay independent.
+
+What are some common modules? 
+You will often come across modules such as these:
+
+.nav, .search, .logo, .breadcrumbs, .title, .button, .icon, .media-object, .list, .frame, .slider, .card, etc.
+
+What are the Results of a Module Based Approach?
+Faster development
+Flexible and scalable code
+Code reuse
+Organized and easy to read code
+Easier to maintain
+Team efficiency
+Decoupled HTML and CSS
+Going Forward
+Remember to treat the above methods as guidelines rather than strict rules. The most important parts are the underlying principles.
+
+Basic Guiding Principals:
+
+Turn visual design into it’s underrating layout structure.
+Breakdown page sections into smaller parts that can act on their own.
+Organize your code so it is consistent.
+Make code that allows for change and growth.
+Create code that is reusable and efficient.
+
+General Modular Guidelines
+OOCSS - Object Oriented CSS: The principal of OOCSS is to abstract visual styles into a separate modifier classes.
+
+SMACSS - Scalable and Modular Architecture for CSS: The structure for SMACSS is based on five categories that your CSS falls into: Base, Layout, Module, State, and 
+Theme. We will incorporate many of the methods from this approach in this course.
+Base rules are the defaults, and are almost exclusively single element selectors. Attribute selectors, pseudo-class selectors, child selectors, or sibling selectors 
+can also be classified as base rules.
+
+Layout rules divide your web page into sections. Layouts hold one or more modules together.
+
+Modules sit inside layout components, and can sit within other modules as well.
+
+State rules define how our modules or layouts will look in a particular state, whether it’s hidden, expanded, active, or inactive. State rules describe how a module or
+layout looks on screens that are smaller or bigger, and in different views, such as the home page or the inside page. You apply states to the same element as a layout 
+rule or as a base module class.
+
+Theme rules act similarly to state rules, because they describe how modules or layouts might appear.
+
+BEM (Block, Element, Modifier)
+DRY (Don’t Repeat Yourself CSS)
+This method is the most different from the three listed above because it modifies a module in the CSS not with a modifier class in the HTML. This makes the HTML a bit cleaner since you don’t append many classnames. Below is a quick example since we do not cover this method in the course.
+//DRY Blue Background 
+.background-blue, 
+.header-primary, 
+.footer-primary { 
+   background: blue; 
+}
+
+Icon fonts have become a popular tool for developers and designers to have linked in their website. Since icon fonts are vector and resolution independent, 
+they are versatile and easy to read on various devices.
+
+CSS PreProcessing
+The preprocessor is comprised of a language, the code that you write, and a compiler that converts the code into standard CSS which is easily read and processed by 
+any web browser. Even though preprocessors have different syntax, they all support a CSS output. More importantly, the resulting CSS file that preprocessors produce 
+functions as regular CSS, so there is no incompatibility with your program.
+
+Two of the more popular CSS preprocessors are Sass (Syntactically Awesome Stylesheets SASS ) and Less (Leaner CSS).
+
+Variables
+CSS presents its functionality in a straightforward and easy-to-learn syntax. However, that straightforward accessibility also limits its functionality. 
+Because of the complexity of web design, you need to be able to employ shortcuts that increase efficiency and save you time. This is where variables prove useful, 
+since they label and store data in memory. Variables are essentially containers that store the information you will reference and manipulate. 
+You also apply descriptive names to your variables to label any data in your program; this allows other users to easily understand the code that you’ve written. 
+Some examples of variables include: color, width, font-size, font-family, and borders.
+
+Nesting
+If you have structured your website’s CSS well, you may not need to use many class or ID selectors. 
+Instead, you can apply nesting, which allows you to specify properties to selectors within other selectors. 
+CSS lacks visual hierarchy when working with child selectors, which you use to match elements that are the direct children of other elements. 
+Because of this, you have to write selectors and their combinations in separate lines. Nesting provides a visual hierarchy to your code, similar to HTML, and 
+increases its readability.
+
+Mixins
+You define a mixin as a CSS rule set; it allows you to define common properties once, and then reuse them throughout the rest of your CSS. 
+Specifically, mixins are a set of definitions that compile according to some parameters or static rules that you set. For example, you can use mixins to write 
+cross-browser background gradients or CSS arrows.
+
+Less uses the @ symbol while scss uses the $ symbol to declare variables
+Example of less mixin
+.round-borders (@radius) {
+   border-radius: @radius;
+}
+
+Example of Sass mixin
+@mixin round-borders (@radius) {
+   border-radius: $radius;
+}
+
+@extend is used to extend a css rule in another rule set
+
+Introduction to cross browser testing
+Linting
+Linting is an essential part of your code review, saving you time and helping you write cleaner code. 
+Linting tools allow you to customize the rules that will be used to test all your CSS code, returning any errors and warnings. 
+Linters analyze your code for potential errors, including scope conflicts. Keep in mind that although the code you’ve written works well in development, 
+that doesn’t always guarantee that it will work in production. Since linting tools are open source, they’re readily available for your use.
+
+FlexBox
+To use flex on a container, add the following:
+
+.container-flex {
+   display: flex;
+}
+
+Once you have the above rules added to a container, the children of that container will become flex items. Utilize both flexbox container properties and flexbox item properties to get the desired layout result.
+
+Flexbox Container Properties
+flex-direction
+This property tells the flex tem which direction to flow, posible values include: row, row-reverse, column, and column-reverse. 
+
+flex-wrap
+This property tells the flex items if they should wrap down to a new line as the container constrains, possible values include wrap, nowrap, and wrap-reverse.
+
+flex-flow
+Is a property used to combine flex-direction and flex-wrap.
+
+justify-content
+This property aligns the flex items horizontally when there is available space on the main axis, values include: flex-start, flex-end,center,pace-between,and space-around.
+
+align-items
+This property aligns the flex items vertically when there is available space on the cross axis, values include:stretch,flex-start,flex-end,center, and baseline.
+
+align-content
+This proberty changes the behavior of the propery flex-wrap by changiong flex items to flex lines, values include:stretch,flex-start,flex-end,center,space-between,space-around.
+
+Flexbox Item Properties
+order
+This property indicates the order of a flex item relative to the other flex items contained.
+
+flex-grow
+This property determines how must a flex item with grow relative to other flex items when space is available.
+
+flex-shrink
+This property is like flex-grow property but instead indicates a shrink factor.
+
+flex-basis
+This property indicates an initial width and height size before applying extra free space in the container.
+
+flex
+This property indicates the length of a flex item relative the other flex item's lengths.
+
+align-self
+This property overrides the flex item's parent property of align-items above.
+
+BootStrap
+offset
+Offset will instruct Bootstrap to skip the specified number of columns before placing content. With offset, the skipped columns will be left blank.
+
+push
+Push will instruct Bootstrap to move content to the right a specified number of columns. With push, the columns that were left blank can be used by pulling content 
+to the left.
+
+pull
+Pull will instruct Bootstrap to move content to the left a specified number of columns. With pull, the columns that were left blank can be used by pushing content to 
+the right.
+
+A CDN is a distributed set of servers, often hosted by another organization. 
+Because the servers are distributed throughout the globe, it generally allows users to access files from servers physically closer to them. 
+In addition, this distribution increases high availability; one server failing won't prevent your users from accessing the scripts. Finally, the performance of your 
+application will increase, as less data will be sent from your server, and fewer connections will be made to it. Several organizations offer CDNs, including Google 
+and, of course, Microsoft.
+
+JQuery
+$(document).ready(function() {
+	// code here
+});
+or 
+$(function(){
+
+});
+
+Common Jquery selector methods
+parent(optional selector),parents(optional selector),children(optional selector),find(selector),prev(optional selector),prevUntil(selector),prevAll(optional selector),
+next(optional selector),nextAll(optional selector),nextUntil(selector),index(element,jqueryObject),get(index),
+$(function() {
+	// code here
+});
+
+Event Object in jquery
+Click Events : click, dblclick
+Input Events : focus , blur, change
+
+Mouse Events : mouseenter, mouseleave, hover
+hover
+The hover event is logically equivalent to both the mouseenter and mouseleave events. What makes hover special is you can actually register two event handlers in one 
+call. The first parameter hover accepts is for mouseenter, or when the hover begins, and the second parameter is for mouseout.
+
+the on method can be used to attach several event handlers to a jquery object while the off method can be used to remove the event handlers from a jquery object
+the delegate method can be used to apply event handlers to dynamic html that was created after the event handlers selector had been loaded.
+
+The delegate syntax is $(selector).delegate(selector, events, eventHandler)
+
+$(selector): In order to use delegate, the jQuery factory must return a parent of the object you wish to wire up.
+selector: From the parent, provide a selector to retrieve the necessary elements.
+events: Same events string as before.
+eventHandler: Same event handler as before.
+
+Delegating event handlers with on
+With jQuery 1.7, delegate is superseded by on. You may have noticed in the prior unit on had a selector parameter as well. If you do not provide that selector, 
+on behaves like a normal event handler registration. But, if you do provide a selector, it will use delegation to register the event handlers.
+
+One important thing to note is the order of parameters for on and delegate. With on, you list the events first and the selector second. With delegate, 
+it's selector followed by events.
+
+The ONE method makes an event handler run only once on a particular jquery object
+one
+one shares a similar syntax with on, only there is no delegation option. You simply provide the name of the event, and the event handler.
+
+<button id="single">This only works once</button>
+<div id="output"></div>
+$(function() {
+    $('#single').one('click', function() {
+        $('#output').text('You clicked on the button');
+    });
+});
+(note: while there is an overload of one that allows for a selector, it will only filter which children the event applies to. It will not enable delegation.)
+
+trigger,triggerHandler
+appendTo,prependTo,append and prepend methods to add html or text at the beginning or at the end of the target selector
+before,insertBefore,after,insertAfter
+wrap,wrapAll,wrapInner, wrap wraps each elements, wrapAll wraps the block of collective element in one block,wrapinner wraps the contents of the target
+animation methods show,hide,toggle,fadeIn,fadeOut,fadeToggle,slideIn,slideOut,slideToggle
+replaceWith unlike the append and prepend methods replaces the target element or content
+remove and empty is used to remove items from the dom but empty only removes the contents of the target while remove deletes the target along with its contents
+Example of replaceAll and replaceWith
+// replaceWith replaces the content on the left with the new content in the parameter
+$('#target').replaceWith('<div>NEW content</div>');
+
+// replaceAll replaces the target in the parameter with the content on the left
+$('<div>NEW content</div>').replaceAll('#target');
+
+A promise is an object returned by functions in jQuery that take a long or variable amount of time. By using a promise, you can ensure your code executes whenever the operation \
+completes, be notified of its success or failure, or potentially receive updates about an operation's progress.
+
+A deferred object allows you to create your own long running operations, allowing developers to use the same patterns provided by the promise object, and be updated 
+when your operation completes.
+
+Web Workers
+Web workers communicate with the main thread by means of a message event the postmessage method is used to trigger a message event from either the main thread with
+worker.postMessage() or the worker space with self.postMessage(), the messages can be retrieved by creating an event listener to listen on the message event and we 
+can access the message through the data property in the event object.
+
+Breaking down using Deferred
+The basic steps are as follows.
+
+Create an instance of deferred: var deferred = $.Deferred();
+Start your asynchronous operation, typically using a worker
+Add the appropriate code to detect success and send the success signal: deferred.resolve()
+Add the appropriate code to detect failure and send the failure signal: deferred.reject()
+Return the promise: return deferred.promise();
+
+Asynchronous JavaScript and XML (Ajax)
+Ajax is a set of technologies that act together to make it easier for us as developers to make calls to server resources from JavaScript. 
+Breaking down the three words that make up the acronym, you'll notice we have asynchronous (which jQuery simplifies through the use of promises), 
+JavaScript (which we already know), and XML. XML is probably the one that doesn't fit, as XML is typically not a preferred mechanism for serialization. 
+As we've seen, we typically want to use JSON, as its more compact and native to JavaScript.
+
+// Option one (pass the success function as a parameter)
+$.get('some-url', function(data) { $('#output').text(data); });
+
+// Option two (use the done function of the promise)
+$.get('some-url').done(function(data) { $('#output').text(data); });
+
+$.getJSON('/api/Demo', function (person) {
+	$('#first-name').val(person.firstName);
+	$('#last-name').val(person.lastName);
+});
+
+// get the data we need to send
+var person = { firstName: 'Christopher', lastName: 'Harrison' };
+
+// Call POST
+
+$.post('URL', // Pass in the URL you need to access
+    person, // Pass in the data to send via POST
+    function(data) {
+        // success event handler
+        // parameter contains value returned by server
+    }
+);
+
+$(document).ajaxSend(function () {
+	// raised when a call starts
+	$('#status').append('<div>Call started</div>');
+}).ajaxComplete(function () {
+	// raised when a call completes
+	$('#status').append('<div>Call completed</div>');
+});
+$('#target').load('some-url.html');$.getScript('some-url.js');
+
+Angular
+Angular is so popular because it:
+
+Provides improved application design architecture
+Promotes code reusability
+Offers plug and play components
+Consists of easy-to-remove components
+Employs two-way data binding
+Allows better teamwork
+
+Angular contains the following core types of objects and components:
+
+Modules
+Controllers
+Services
+Directives.
+
+The $digest cycle is the function to update the DOM that Angular calls whenever the data is updated. This function enables you to construct your application without 
+considering the DOM.
+
+Angular is a JavaScript framework - a higher-level abstraction of JavaScript functions designed to make writing JavaScript simpler and easier. 
+It's also its own development pattern, and can change the way you shape and build your applications. While Angular has many abstractions to lower level JavaScript 
+methods, it does not have the sheer number of functions that jQuery does, so you will frequently see them side by side, jQuery within Angular. 
+Instead of being a multipurpose collection of lower-level JavaScript functions, Angular provides a new way of organizing and running your JavaScript by allowing your 
+HTML to be dynamic and react to data.
+
+Services are like the initial valves that lead to the water source. They exist primarily to feed data into the pipeline.
+
+Controllers are like the pipes that control the water flow to and from the Services.
+
+View Templates are like the faucets, they exist to consume the data and react accordingly.
+
+Angular module is nothing more than a container for various parts of your app. Since an Angular app does not have a single point of entry like some environments 
+(such as a Main method in a C application), modules provide the means for defining how the application can be started. 
+
+In Angular, the word module refers to either an entire Angular application or independent components within that application, such as controllers, services, filters, 
+and directives. The components of Angular modules provide specific functionality via self-contained sections of code. Through the process called Dependency Injection,
+modules can share variables between one another without having to reuse code.
+
+Modules provide a number of benefits including:
+
+They may be reused in multiple applications
+They can be loaded in any order (or in parallel)
+Unit testing need only load the relevant modules, keeping the tests fast
+
+ "Bootstrap" is just a fancy way of saying "configure and start."
+
+When Angular compiles the HTML, it processes the ng-controller directive, which, in turn, asks the injector to create an instance of the controller and its 
+dependencies. The application code simply declares the dependencies it needs without having to deal with the injector. Angular invokes certain functions, 
+such as service factories and controllers, via the injector. You annotate these functions so that the injector knows what services to inject into the function.
+
+MVVM is different from MVC, most notably because it allows for two-way data binding between the model and the view. For example, an input field could be modified by a user, which will cause the data in the model to change, or a change within the model can cause the input data to reflect different data instead.
+
+MVVM consists of these three components:
+
+Model
+The model is the source of data, or the data itself, usually encapsulated in Services, Factories, or Constants in Angular. It is best to keep all the business logic 
+in the model in MVVM.
+
+View
+The view is what the user sees and interacts with, in this case, the dynamic view presented by Angular on the web page. In Angular, instead of manipulating the DOM 
+of the view itself as with jQuery, the views are constructed in such a way that any changes to the view model will cause the view to mutate accordingly.
+
+View Model
+The view model binds the data from the model to the view and vice versa. In Angular, it is encapsulated by the $scope variable, which is decorated by a 
+function called a Controller. It's best to keep the view model as thin as possible, placing most of the logic to services and factories. 
+Think of the view model as a series of streets, some can be one-way or two-way, depending on the desired functionality. Since data can be manipulated both by the 
+user and the model, the view model allows for both interactions to work with the same variable.
+
+Controllers
+The role of controllers in Angular is to expose data to our view via $scope, and to add functions to $scope that contain business logic that enhances view behavior.
+Do not use controllers to manipulate the DOM, format input, or filter output. Using databinding and other built-in Angular methods such as filters, form controls, 
+and directives will help you maintain the testability and ease of use of your controllers. These methods will also keep the concern of your presentation layer at the 
+view level. Likewise, avoid using Controllers to share code or state across controllers, or to manage the life-cycle of other components. This behavior should be kept 
+at the Model level in services or factories.
+
+In order to prevent variable collision between controllers and make referencing different scopes easier, use the controller as syntax. It will assign the scope for that controller to a separate variable that the view can reference.
+
+<body ng-controller="SettingsController1 as settings">
+{{settings.sampleScopeVariable}}
+</body>
+
+Performance Tip: If you know a variable isn't going to change in the view, and you just want to bind its initial value, you can use the '::' characters in your 
+expression (e.g. {{::model.title}}) to perform a one-time binding. This tells Angular to go ahead and set the value the first time, but not to set a watcher to keep 
+up on it. This can be a useful performance boost for larger applications.
+
+The built-in Directives most commonly used in Angular are:
+
+ng-if
+ng-model (which you learned about previously)
+ng-hide/ng-show
+ng-repeat
+ng-class
+ng-style
+ng-blur
+ng-change
+ng-click
+ng-copy
+ng-cut
+ng-dblclick
+ng-focus
+ng-keydown
+ng-keypress
+ng-keyup
+ng-mousedown
+ng-mouseenter
+ng-mouseleave
+ng-mousemove
+ng-mouseover
+ng-mouseup
+ng-paste
+
+Here is a list of Promise states:
+
+Pending: an initial state, not fulfilled or rejected
+Fulfilled: the operation completed successfully
+Rejected: the operation failed
+Settled: the operation is either fulfilled or rejected, but not pending
+Resolved: the promise is settled or locked into a promising chain
+
+Types of form validation
+-Required
+-Type validation
+-Length validation
+-Pattern validation
+
+These are the states that can be applied to input fields:
+$untouched - The field has not been touched yet.
+$touched - The field has been touched.
+$pristine - The field has not been modified yet.
+$dirty - The field has been modified.
+$invalid - The field content is not valid.
+$valid - The field content is valid.
+These states are all properties of the input field, and are either true or false.
+
+These are the states provided to entire forms:
+$pristine - No fields have been modified yet.
+$dirty - One or more have been modified.
+$invalid - The form content is not valid.
+$valid - The form content is valid.
+$submitted - The form is submitted.
+In addition, the following CSS classes get applied by Angular:
+
+For input fields:
+ng-untouched - The field has not been touched yet.
+ng-touched - The field has been touched.
+ng-pristine - The field has not been modified yet.
+ng-dirty - The field has been modified.
+ng-valid - The field content is valid.
+ng-invalid - The field content is not valid.
+ng-valid-key - One key for each validation. For example: ng-valid-required; this is useful when there is more than one thing that must be validated.
+ng-invalid-key - For example: ng-invalid-required
+For forms:
+ng-pristine - No fields have been modified yet.
+ng-dirty - One or more fields have been modified.
+ng-valid - The form content is valid.
+ng-invalid - The form content is not valid.
+ng-valid-key - One key for each validation. For example: ng-valid-required; this is useful when there is more than one thing that must be validated.
+ng-invalid-key - Example: ng-invalid-required
+
+<input type="number" name="phone" class="form-control" ng-model="model.phone" ng-required="!model.email"> 
+<input type="email" name="emailAddress" class="form-control" ng-model="model.email" ng-required="!model.phone">
+
+Data access Services come in three forms:
+
+- Service
+- Factory
+- Provider
+
+Essentially, Provider, Factory, and Service are all Services. A Factory is a special case of a Service when all you need is a $get() function, 
+allowing you to write it with less code.
+
+Here is a summary of when to use each:
+
+Factory: The value you are providing needs to be calculated based on other data.
+
+Service: You are returning an object with methods.
+
+Provider: You want to be able to configure, during the config phase, the object that is going to be created before it’s created. Use the Provider mostly in the app 
+config, before the app has fully initialized.
+Services in Angular provide an easy way to share logic through your application. Services can be injected into any controller or directive with the standard Dependency 
+Injection.
+
+myApp.service('thisService', function(){
+    var _food = 'Chicken';
+    var _drink = 'Soda';
+    this.getFood = function(){
+        return _food;
+    }
+    this.getDrink = function(){
+        return _drink;
+    }
+    return new this;
+})
+
+myApp.controller('myController', ['thisService', function(thisService){
+    var serviceInstance = new thisService;
+    var someFood = thisService.getFood();
+    var someDrink = thisService.getDrink();
+Angular Factory: The underlying purpose of a Factory is the same as a Service, but there are a few key differences:
+
+You use both Factory and Service to share code across multiple controllers or directives by injecting them as a dependency.
+A Factory allows you to manipulate/add logic before creating a new object, while a Service is instantiated with the new keyword.
+A Factory only has to be injected once before use.
+}])
+
+A Factory should have a single responsibility encapsulated by its context. Once a factory begins to exceed that singular purpose, a new factory should be created.
+'minification-safe' notation
+
+Directives
+Directives are one of the most useful components in Angular. They can serve multiple functions, such as:
+
+Declaring a whole template-driven HTML component in a single object
+Augmenting an existing HTML component
+Serving as a container for other Directives, thereby eliminating the need for a controller
+
+Directives are the best way to modify DOM elements and attach event listeners in Angular, rather than modifying them directly as you would in jQuery. 
+Since you can attach Directives to as many elements as you wish, Directives can create reusable components or transformations for use throughout your application.
+
+At a high level, Directives are markers on a DOM element (such as an attribute, element name, comment or CSS class) that tell Angular's HTML compiler ($compile) 
+to attach a specified behavior to that DOM element, such as via event listeners, or even to transform the DOM element and its children.
+
+directives are JavaScript functions that manipulate and add behaviors to HTML DOM elements
+
+Scope is an object that refers to the application model and it is an execution context for expressions. Scopes are arranged in hierarchical structure that mimics the 
+DOM structure of the application. Scopes can watch expressions and propagate events
+
+Isolated Scope
+@ provides one-way binding of string values into the directive
+= provides two-way binding of values within the directive
+& provides access to functions passed into the directive
+
+Restrict
+As you have already learned, directives can be used as either an HTML element, an attribute in HTML, or a CSS class. 
+What the restrict property does is allows you to control how your directive is used. It can be called with any combination of C, E, A, or M.
+
+E allows the directive to be used as an element
+A allows the directive to be used as an attribute
+C allows the directive to be used as a CSS class
+M is a rarely used value that allows the directive to be used in commented code
+Generally, if you are creating a stand-alone custom element, E should be used. 
+If you are modifying or "decorating" an existing element you should use A. AE is the default value for restrict. You'll find more information on this at the Angular 
+Style Guide section on Restrict
+
+Transclude
+The transclude attribute allows you to put a placeholder in your template for consumers of the directive to be able to include their own HTML when implementing the 
+directive. You mark this spot in your template with the ng-transclude element.
+
+For example:
+
+app.directive('thisDirective', function() {
+  return {
+    transclude: true,
+    template: '<div>This tag remains during transclusion.</div>
+    <div>
+    <ng-transclude>This tag is replaced by consumer of this directive.</ng-transclude>
+    </div>'
+    }
+});
+<this-directive>
+<span>This is transcluded!</span>
+</this-directive>
+Would render to:
+
+<div>This tag remains during transclusion.</div>
+<div>
+<span>This is transcluded!</span>
+</div>
+
+Require
+When you use require, you can enable directive to directive communication, even across isolated Scopes. When using require, only properties defined in the 
+other directive's controller can be accessed, and it can only be used inside the link function.
+
+Let's say you have this directive, and you want to access the object 'noise' in a different directive.
+
+app.directive('directiveOne', function(){
+    return {
+        link: function(){
+
+        }
+        controller: function(){
+            this.noise = 'woo'
+        }
+        controllerAs: oneCtrl
+    }
+})
+To do so, you use require to call the other directive, and then a fourth property ctrls will be available in your link function. 
+Directives required in through the require property create an array in the ctrls variable.
+
+app.directive('directiveTwo', function(){
+    return {
+        require: '^directiveOne, directiveTwo',
+        link: function(scope, elem, attrs, ctrls){
+            var oneCtrl = ctrls[0]
+            var thisCtrl = ctrls[1]
+            thisCtrl.noise = oneCtrl.noise
+            //thisCtrl.noise now == 'woo'
+        }
+    }
+})
+</div
+
+The '&' is a special attribute that allows you to evaluate any expression passed to it as a function.
+
+Angular UI Bootstrap
+Node Express
+'use strict';
+var express = require('express'),
+app = express();
+var http = require('http').Server(app);
+app.use(function (req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
+app.use(express.static(__dirname + '/'));
+var server = app.listen('3000', function() {
+    var host = server.address().address;
+    var port = server.address().port;
+    console.log('listening at port:'+ port);
+});
+
+module.exports = app;
+
+Unit Testing in Angular
+The general steps involved with Unit Testing are:
+
+Describe the object with type and name.
+Load your object's module.
+Load mock modules as needed.
+Inject dependencies and spy on methods.
+Initialize the object: services need to get injected, controllers are instantiated using the $controller service, and we need to $compile directives.
+Write expectations grouped in describe blocks.
+

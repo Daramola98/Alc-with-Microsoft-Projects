@@ -1,0 +1,20 @@
+.boxElement, body header, body article, body footer {
+  margin: 20px;
+  padding: 20px;
+  font-family: 'Segoe UI';
+  font-size: 1.5em;
+  font-weight: bold; }
+
+body {
+  padding: 20px; }
+  body header {
+    background-color: #906288;
+    font-size: 3em; }
+  body article {
+    background-color: #879BB1;
+    font-weight: normal; }
+  body footer {
+    background-color: #C0AFA2;
+    font-weight: lighter;
+    font-size: 1em;
+    font-style: italic; }

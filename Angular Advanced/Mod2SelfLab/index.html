@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="app">
+
+<head>
+    <title>Directives</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <style type='text/css'>
+        .silver {
+            background-color: silver;
+        }
+    </style>
+</head>
+
+<body ng-controller="LabController as vm">
+    <pre> {{vm.author}}</pre>
+    <div class="container">
+        <h1>Directives</h1>
+        <author-directive data="vm.author" action="vm.details(person)"></author-directive>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+    <script src="./app/app.js"></script>
+    <script src="./app/LabController.js"></script>
+    <script src="./app/authorDirective.js"></script>
+</body>
+
+</html>

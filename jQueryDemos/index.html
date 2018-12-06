@@ -1,0 +1,118 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style>
+        body {
+            font-family: Verdana;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: darkblue;
+        }
+
+        .rating-circle {
+            height: 2em;
+            width: 2em;
+            border: .1em solid black;
+            border-radius: 1.1em;
+            display: inline-block;
+            margin: 0;
+            padding: .1em;
+        }
+
+        .rating-hover {
+            background-color: yellow;
+        }
+
+        .rating-chosen {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Contoso Web Developer Conference</h1>
+    <h2>Finding elements using jQuery</h2>
+    <div>This session is about identifying elements using jQuery methods and selectors.</div>
+    <h3>Rate this session</h3>
+    <div id="rating-container" max-value="5"></div>
+
+    <div>
+        <br>
+        <label for="max-value">Enter max value:</label>
+        <input type="text" id="max-value" />
+        <button type="button" id="update-max-value">Update max value</button>
+    </div>
+    <br>
+    <button type="button" id="save-rating">Save rating</button>
+    <br>
+    <div id="output"></div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+
+    <script>
+        // your answer would go here
+        $(function () {
+            var container = $('#rating-container');
+            var ratingCircle = $('.rating-circle');
+            var index;
+
+            for (var x = 0; x < container.attr('max-value'); x++) {
+                container.append('<div class="rating-circle"></div>');
+            }
+
+            $('#save-rating').click(function(){
+                var rating = {value : index + 1, maxValue : container.attr('max-value')};
+                var queryUrl = 'http://jquery-edx.azurewebsites.net/api/Rating';
+                $.post(queryUrl, rating).done(function(data){
+                    $('#output').text(data.message);
+                })
+            });
+
+            $('#update-max-value').click(function () {
+                index = -1;
+                container.empty();
+                
+                var maxValue = parseInt($('#max-value').val());
+                container.attr('max-value', maxValue);
+
+                for (var x = 0; x < maxValue; x++) {
+                    container.append('<div class="rating-circle"></div>');
+                }
+                $('#max-value').val('');
+            })
+
+            function clickCircle() {
+                index = $(container).children('.rating-circle').index(this);
+                $(this).addClass('rating-chosen').prevAll('.rating-circle').addClass('rating-chosen');
+                $(this).nextAll('.rating-circle').removeClass('rating-chosen');
+
+            }
+
+            function mouseEnterCircle() {
+                $(this).addClass('rating-hover').removeClass('rating-chosen').prevAll('.rating-circle').addClass('rating-hover').removeClass('rating-chosen');
+                $(this).nextAll('.rating-circle').removeClass('rating-hover rating-chosen');
+            }
+
+            function mouseOutCircle() {
+                $(this).removeClass('rating-hover').prevAll('.rating-circle').removeClass('rating-hover');
+                $(this).nextAll('.rating-circle').removeClass('rating-hover');
+                if (index >= 0) {
+                    var element = $($(container).children().get(index));
+                    element.addClass('rating-chosen').prevAll().addClass('rating-chosen');
+                    element.nextAll().removeClass('rating-chosen');
+
+                }
+            }
+
+            container.delegate('.rating-circle', 'click', clickCircle);
+            container.delegate('.rating-circle', 'mouseenter', mouseEnterCircle);
+            container.delegate('.rating-circle', 'mouseleave', mouseOutCircle);
+        })
+    </script>
+</body>
+
+</html>

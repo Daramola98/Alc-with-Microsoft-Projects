@@ -1,0 +1,14 @@
+/*{
+    "version": "0.1.0",
+    "command": "tsc",
+    "isShellCommand": true,
+    "showOutput": "silent",
+    "args": ["js/build.ts"],
+    "problemMatcher": "$tsc"
+}*/
+{
+    "version": "0.1.0",
+    "command": "node-sass",
+    "isShellCommand": true,
+    "args": ["sass/style.scss", "sass/style.css"]
+}

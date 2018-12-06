@@ -1,0 +1,94 @@
+let randomNumber = Math.floor(Math.random()*10);
+function guess(guessNumber){
+
+if(guessNumber === randomNumber) return "Yay You guessed right";
+
+if(guessNumber !== randomNumber && guessNumber < randomNumber){
+
+console.log("Number is lower than the randomNumber");
+
+}
+
+else
+{
+
+console.log("Number is greater than random Number")
+
+}
+
+}
+
+Geolocation Api usage sample
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Map</title>
+    </head>
+    <body>
+        <!-- for position display -->
+        <div id="myposition"></div>
+        <!-- for gmap display -->
+        <div id="map" style="width:640px;height:480px"></div>
+        <!-- get gmap API -->
+        <script src="https://maps.google.com/maps/api/js?sensor=false"></script>
+        <script>
+            // Default position
+            var centerpos = new google.maps.LatLng(48.579400,7.7519);
+            // default options for the google map
+            var optionsGmaps = {
+                center:centerpos,
+                navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                zoom: 15
+            };
+            // Init map object
+            var map = new google.maps.Map(document.getElementById("map"), optionsGmaps);
+            if(navigator.geolocation) {
+                // callback function, called by getCurrentPosition() in case of success
+                function drawPosition(position) {
+                    var infopos = "Got position : <br>";
+                    infopos += "Latitude : "+position.coords.latitude +"<br>";
+                    infopos += "Longitude: "+position.coords.longitude+"<br>";
+                    infopos += "Altitude : "+position.coords.altitude +"<br>";
+                    document.getElementById("myposition").innerHTML = infopos;
+                // Make new object LatLng for Google Maps
+                var latlng = new google.maps.LatLng(position.coords.latitude
+                position.coords.longitude);
+                // Add a marker at position
+                var marker = new google.maps.Marker({
+                    position: latlng,
+                    map: map,
+                    title:"You are here"
+                });
+                // center map on longitude and latitude
+                map.panTo(latlng);
+            }
+            // callback function, called by getCurrentPosition() in case of error
+            function errorPosition(error) {
+                ...
+            }
+            navigator.geolocation.getCurrentPosition(drawPosition,errorPosition);
+            } else {
+                alert("Geolocation API not supported by your browser");
+            }
+        </script>
+    </body>
+</html>
+
+Try to write a small game that will display a word taken from an array, randomly, and you will have to type the letters of this word as fast as you can. A bit like the "type of the dead" game (look on YouTube). You can imagine the evolution such as choosing the level, start with 3 letter words, 4 letter words, etc. 
+Choose a topic (medicine, with very difficult words to spell, etc.). If you look at the end of the module, you will see how to work with graphics and animation, you can also imagine a graphic version of this game.
+
+Create a quiz based on videos - here is a proposed story telling:
+
+a video is playing, then it stops at a given time, and you display a question such as: "who is this actor?" followed by some radio buttons + a proposal (see what we do with quizzes in this course): "Leonardo Di Caprio" or "Harisson Ford"?
+Once the question is answered, you display "Correct" or "Incorrect"
+Then the video continues....
+When the video ends, please show the final score. 
+A few hints:
+
+Use an array with stop times, for example let stopTimes = [5, 10, 20]. This will mean "the video should stop at currentTime = 5, currentTime = 10, currentTime = 20". 
+You will use a timeupdate event listener on the video, like in the example from the live coding video, and the pause, play and stop methods from the video element JavaScript API. And also an ended event listener for detecting the end of the video.
+Start from one of the example in the course (the one from the live coding video): try to make the video stop at 5s ,for example, and then display a question, and a "continue" button. When the button is pressed, the video goes on and stops a bit further, etc.
+When this works (the video plays, then stops, you click, it continues, etc.), try to turn the displayed sentence into a quiz: add HTML radio buttons, and when you click the continue button, you will validate the answer, show "correct" or "incorrect", and maybe increment the score.
+Feel free to add any feature(s) you'd like.
